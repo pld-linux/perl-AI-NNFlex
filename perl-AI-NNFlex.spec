@@ -6,7 +6,7 @@
 %define	pdir	AI
 %define	pnam	NNFlex
 Summary:	AI::NNFlex - A base class for implementing neural networks
-#Summary(pl):	
+Summary(pl):	AI::NNFlex - klasa bazowa do implementowania sieci neuronowych
 Name:		perl-AI-NNFlex
 Version:	0.24
 Release:	1
@@ -26,10 +26,12 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 AI::NNFlex is a base class for constructing your own neural network
 modules. To implement a neural network, start with the documentation
-for AI::NNFlex::Backprop, included in this distribution
+for AI::NNFlex::Backprop, included in this distribution.
 
-# %description -l pl
-# TODO
+%description -l pl
+AI::NNFlex to klasa bazowa do konstruowania w³asnych modu³ów sieci
+neuronowych. Aby zaimplementowaæ sieæ neuronow±, najlepiej zacz±æ od
+dokumentacji AI::NNFlex::Backprop do³±czonej do tego modu³u.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
