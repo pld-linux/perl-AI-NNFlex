@@ -9,7 +9,7 @@ Summary:	AI::NNFlex - A base class for implementing neural networks
 Summary(pl.UTF-8):	AI::NNFlex - klasa bazowa do implementowania sieci neuronowych
 Name:		perl-AI-NNFlex
 Version:	0.24
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
