@@ -1,0 +1,8 @@
+--- AI-NNFlex-0.24/Makefile.PL~	2005-06-16 14:26:40.000000000 +0200
++++ AI-NNFlex-0.24/Makefile.PL	2014-01-26 13:34:57.379481664 +0100
+@@ -5,5 +5,4 @@
+     'NAME'              => 'AI::NNFlex',
+     'VERSION_FROM'      => 'lib/AI/NNFlex.pm', # finds $VERSION
+     'PREREQ_PM'         => {'Math::Matrix'=>0}, 
+-	'MAN3PODS'	=> { },
+ );

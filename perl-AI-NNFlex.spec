@@ -15,6 +15,7 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-authors/id/C/CC/CCOLBOURN/ai-nnflex/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	9d192b7c209ccafbca88d6ac6048b677
+Patch0:		build-man.patch
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
@@ -35,10 +36,10 @@ dokumentacji AI::NNFlex::Backprop dołączonej do tego modułu.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
+%patch0 -p1
 
 %build
 %{__perl} Makefile.PL \
-	MAN3PODS= \
 	INSTALLDIRS=vendor
 %{__make}
 
