@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests		# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define	pdir	AI
 %define	pnam	NNFlex
+%include	/usr/lib/rpm/macros.perl
 Summary:	AI::NNFlex - A base class for implementing neural networks
 Summary(pl.UTF-8):	AI::NNFlex - klasa bazowa do implementowania sieci neuronowych
 Name:		perl-AI-NNFlex
@@ -16,6 +16,7 @@ Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-authors/id/C/CC/CCOLBOURN/ai-nnflex/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	9d192b7c209ccafbca88d6ac6048b677
 Patch0:		build-man.patch
+URL:		http://search.cpan.org/dist/AI-NNFlex/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
