@@ -4,7 +4,6 @@
 
 %define	pdir	AI
 %define	pnam	NNFlex
-%include	/usr/lib/rpm/macros.perl
 Summary:	AI::NNFlex - A base class for implementing neural networks
 Summary(pl.UTF-8):	AI::NNFlex - klasa bazowa do implementowania sieci neuronowych
 Name:		perl-AI-NNFlex
